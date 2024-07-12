@@ -1,0 +1,107 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: rgb(var(255, 255, 255));
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+}
+/* rtl:end:ignore */
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+/* rtl:begin:remove */
+.featurette-heading {
+  letter-spacing: -0.05rem;
+}
+
+/* rtl:end:remove */
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+.carousel-item {
+  background-size: cover; /* Mengisi area */
+  background-position: center; /* Memusatkan gambar */
+  background-repeat: no-repeat; /* Tidak mengulangi gambar */
+  height: 70vh; /* Tinggi untuk setiap item */
+  position: relative; /* Agar caption bisa ditempatkan di atas gambar */
+}
+
+/* Tambahkan background untuk setiap carousel-item */
+.carousel-item.active {
+  background-image: url("ruan\ mei1.jpg"); /* Ganti dengan path gambar pertama */
+}
+
+.carousel-item:nth-child(2) {
+  background-image: url("luofu.jpg"); /* Ganti dengan path gambar kedua */
+}
+
+.carousel-item:nth-child(3) {
+  background-image: url("Acheron.jpg"); /* Ganti dengan path gambar ketiga */
+}
+
+.carousel-caption {
+  position: absolute; /* Memastikan caption berada di atas gambar */
+  bottom: 20px; /* Jarak dari bawah */
+  left: 20px; /* Jarak dari kiri */
+  color: white; /* Warna teks */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Efek bayangan untuk teks */
+}
